@@ -1,0 +1,121 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6907F2; /* Adjust color to match brand purple */
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 24px;
+    color: #666;
+}
+
+.info-text {
+    color: #666;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.rewards-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.search {
+    padding: 20px;
+}
+
+.search-box {
+    background-color: #f0f0f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    background: transparent;
+}
+
+.suggestions h3 {
+    margin-bottom: 10px;
+}
+
+.suggestions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.suggestions li {
+    background-color: #eeeeff; /* Light purple background for visibility */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-weight: bold; /* Make the text bold */
+}
+
+.location-icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.suggestions li::after {
+    content: '\2192'; /* Unicode for right arrow */
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    color: #6907F2; /* Purple color for the arrow */
+}

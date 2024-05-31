@@ -1,0 +1,95 @@
+body, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+h2 {
+    margin: 0;
+    padding: 15px 15px;
+
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6907F2;
+    color: white;
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.info-text {
+    color: #666;
+}
+
+.highlight {
+    color: #6907F2;
+    font-weight: bold;
+}
+
+.steps {
+    padding: 20px;
+    background-color: #f0f0f5; /* Matches the body background for a consistent look */
+}
+
+.step {
+    margin-bottom: 10px;
+    background-color: #6907F2; /* Similar to the purple color in the image */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners like in the image */
+    color: white; /* White text for better visibility */
+}
+
+.step h3 {
+    font-weight: bold;
+}
+
+.rewards-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn.full-width.instruction {
+    background-color: #6907F2;
+    color: white;
+    margin-top: 20px;
+}
