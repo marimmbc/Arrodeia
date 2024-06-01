@@ -48,7 +48,7 @@ body {
 
 .btn {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #6907F2;
     color: white;
     border: none;
     border-radius: 5px;
@@ -58,10 +58,16 @@ body {
 }
 
 .info-text {
+    word-spacing: normal;
     font-weight: 100;
     font-size: 14px;
     color: #666;
-    margin-top: 500px;
+    margin-top: 300px; 
+    position: absolute; 
+    width: 100%; 
+    text-align: center; 
+    left: 0; 
+    right: 0; 
 }
 
 .rewards {
