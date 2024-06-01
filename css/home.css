@@ -1,95 +1,120 @@
-body, h1, h3, p {
+/* Reset básico para remover margens e preenchimentos padrões */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f5;
+    background-color: #ffffff;
     color: #333;
-}
-
-h2 {
-    margin: 0;
-    padding: 15px 15px;
-
+    line-height: 1.6;
+    overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 .container {
-    max-width: 400px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    width: 360px; /* Largura fixa simulando um dispositivo móvel */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .header {
-    background-color: #fff;
-    text-align: center;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 .logo {
-    height: 80px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
 }
 
 .buttons {
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .btn {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 20px;
+    padding: 10px;
     background-color: #6907F2;
     color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.full-width {
+    font-size: 14px;
     width: 100%;
 }
 
-.info-text {
-    color: #666;
+.btn:hover {
+    background-color: #0056b3;
 }
 
-.highlight {
-    color: #6907F2;
-    font-weight: bold;
+.info-text {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.rewards {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.rewards-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .steps {
-    padding: 20px;
-    background-color: #f0f0f5; /* Matches the body background for a consistent look */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.steps h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .step {
     margin-bottom: 10px;
-    background-color: #6907F2; /* Similar to the purple color in the image */
-    padding: 10px;
-    border-radius: 10px; /* Rounded corners like in the image */
-    color: white; /* White text for better visibility */
 }
 
 .step h3 {
-    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #007BFF;
 }
 
-.rewards-image {
-    width: 100%;
-    height: auto;
-    display: block;
+.step p {
+    font-size: 14px;
+    color: #555;
 }
 
-.btn.full-width.instruction {
-    background-color: #6907F2;
-    color: white;
+.footer {
     margin-top: 20px;
+    text-align: center;
+}
+
+.footer .btn {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.footer .instruction {
+    background-color: #6907F2;
+}
+
+.footer .instruction:hover {
+    background-color: #0056b3;
 }
