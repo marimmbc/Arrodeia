@@ -21,7 +21,26 @@ class ButtonManager {
     }
 }
 
+
+// Função para abrir um pop-up
+function openPopup(popupId) {
+    document.getElementById(popupId).style.display = 'flex';
+}
+
+// Função para fechar um pop-up
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = 'none';
+}
+
 // Inicializando a classe ButtonManager quando o documento estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
     new ButtonManager();
+    
+    // Exibir o pop-up de localização primeiro
+    openPopup('popup-location');
+    
+    // Exibir o pop-up de boas-vindas após 5 segundos
+    setTimeout(() => {
+        openPopup('popup-welcome');
+    }, 5000);
 });
