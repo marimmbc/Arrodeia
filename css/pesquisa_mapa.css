@@ -1,0 +1,80 @@
+/* styles.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    height: 700px; /* Altura típica de uma tela de celular */
+    width: 400px;  /* Largura típica de uma tela de celular */
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    height: 50%;
+    width: 100%;
+}
+
+.search-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.suggestions {
+    margin-top: 10px;
+}
+
+.suggestion {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.icon {
+    font-size: 5px;
+    margin-right: 5px;
+    color: #8e44ad;
+}
+
+.text .title {
+    font-weight: bold;
+    color: #274E1A;
+}
+
+.text .location {
+    color: #7f8c8d;
+}

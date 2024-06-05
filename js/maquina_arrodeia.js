@@ -1,13 +1,32 @@
-document.querySelector('.btn-instructions').addEventListener('click', function() {
-    document.getElementById('modal').style.display = 'block';
-});
+class Modal {
+    constructor(modalId, triggerSelector, closeSelector) {
+        this.modal = document.getElementById(modalId);
+        this.trigger = document.querySelector(triggerSelector);
+        this.closeButton = document.querySelector(closeSelector);
 
-document.querySelector('.close').addEventListener('click', function() {
-    document.getElementById('modal').style.display = 'none';
-});
+        this.initialize();
+    }
 
-window.onclick = function(event) {
-    if (event.target == document.getElementById('modal')) {
-        document.getElementById('modal').style.display = 'none';
+    initialize() {
+        this.trigger.addEventListener('click', () => this.open());
+        this.closeButton.addEventListener('click', () => this.close());
+        window.addEventListener('click', (event) => this.outsideClick(event));
+    }
+
+    open() {
+        this.modal.style.display = 'block';
+    }
+
+    close() {
+        this.modal.style.display = 'none';
+    }
+
+    outsideClick(event) {
+        if (event.target == this.modal) {
+            this.close();
+        }
     }
 }
+
+// Uso
+const instructionsModal = new Modal('modal', '.btn-instructions', '.close');
